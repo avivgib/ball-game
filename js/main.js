@@ -1,5 +1,10 @@
 'use strict'
 
 function onBallClick(elBall) {
-    console.log(`The ball value is: ${elBall.innerText}`)
+    let currentWidth = elBall.clientWidth
+    let newWidth = currentWidth + 50
+
+    elBall.style.width = newWidth + 'px'
+    elBall.style.height = newWidth + 'px'
+    elBall.innerHTML = newWidth
 }
